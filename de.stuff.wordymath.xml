@@ -1,0 +1,29 @@
+<testsuites>
+	<testsuite name="AllTests" tests="5">
+		<testcase classname="AllTests" name="AdditionTests::testSingleAddition1">
+			<failure message="../test/WordProblemSolverTests.cpp:15 testSingleAddition1: 2 == solver.solve(&quot;What is 1 plus 1?&quot;) expected:	2	but was:	0	">
+testSingleAddition1: 2 == solver.solve(&quot;What is 1 plus 1?&quot;) expected:	2	but was:	0	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="AdditionTests::testSingleAddition2">
+			<failure message="../test/WordProblemSolverTests.cpp:19 testSingleAddition2: 55 == solver.solve(&quot;What is 52 plus 2?&quot;) expected:	55	but was:	0	">
+testSingleAddition2: 55 == solver.solve(&quot;What is 52 plus 2?&quot;) expected:	55	but was:	0	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="AdditionTests::testSingleAdditionWithNegativeNumbers">
+			<failure message="../test/WordProblemSolverTests.cpp:23 testSingleAdditionWithNegativeNumbers: -11 == solver.solve(&quot;What is -1 plus -10?&quot;) expected:	-11	but was:	0	">
+testSingleAdditionWithNegativeNumbers: -11 == solver.solve(&quot;What is -1 plus -10?&quot;) expected:	-11	but was:	0	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="AdditionTests::testSingleAdditionOfLargeNumbers">
+			<failure message="../test/WordProblemSolverTests.cpp:27 testSingleAdditionOfLargeNumbers: 45801 == solver.solve(&quot;What is 123 plus 45678?&quot;) expected:	45801	but was:	0	">
+testSingleAdditionOfLargeNumbers: 45801 == solver.solve(&quot;What is 123 plus 45678?&quot;) expected:	45801	but was:	0	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="AdditionTests::testMultipleAdditions">
+			<failure message="../test/WordProblemSolverTests.cpp:31 testMultipleAdditions: 3 == solver.solve(&quot;What is 1 plus 1 plus 1?&quot;) expected:	3	but was:	0	">
+testMultipleAdditions: 3 == solver.solve(&quot;What is 1 plus 1 plus 1?&quot;) expected:	3	but was:	0	
+			</failure>
+		</testcase>
+	</testsuite>
+</testsuites>
