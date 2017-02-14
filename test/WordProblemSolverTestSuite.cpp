@@ -4,6 +4,7 @@
 // TODO: #include the headers for the code you want to test
 
 #include "WordProblemSolverTests.h"
+#include "../src/util/Helper.h"
 
 // replace this function with your test functions
 

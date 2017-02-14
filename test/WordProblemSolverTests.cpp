@@ -16,7 +16,7 @@ void AdditionTests::testSingleAddition1() {
 }
 
 void AdditionTests::testSingleAddition2() {
-	ASSERT_EQUAL(55, solver.solve("What is 52 plus 2?"));
+	ASSERT_EQUAL(54, solver.solve("What is 52 plus 2?"));
 }
 
 void AdditionTests::testSingleAdditionWithNegativeNumbers() {

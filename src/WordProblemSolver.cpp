@@ -6,25 +6,29 @@
  *      Author: Sascha Kretzschmann
  */
 #include <cstring>
+#include <cstdlib>
 #include "WordProblemSolver.h"
+#include "../src/util/Helper.h"
 
 int WordProblemSolver::solve(std::string wordProblem) {
+	std::vector<std::string> elements { };
+	int result { };
 	this->setWordProblem(wordProblem);
-	this->parseWordProblem(this->getWordProblem());
-	return 0;
+	elements = this->parseWordProblem(this->getWordProblem());
+	for (std::vector<std::string>::size_type i=0; i != elements.size(); i++){
+		int tmp = std::atoi(elements[i].c_str());
+		result += tmp;
+	}
+	return result;
 }
 
 std::vector<std::string> WordProblemSolver::parseWordProblem(std::string wordProblem) {
-	// create a new C-string (null-terminated sequence of characters)
-	// new char has length +1 because it terminates with null-character ('\0')
-	char * cstring = new char[wordProblem.length() + 1] { };
-	// copy c-string copy of std::string
-	std::strcpy(cstring, wordProblem.c_str());
-	// tokenize
-	char * tokenPointer = std::strtok(cstring, " ");
-
-	// call dtor of cstring
-	delete[] cstring;
 	std::vector<std::string> elements { };
+	// tokenize
+	char * tokenPointer = std::strtok(Helper::str2cstr(wordProblem), " plus ? What i");
+	while(tokenPointer != NULL) {
+		elements.push_back(tokenPointer);
+		tokenPointer = strtok(NULL, " plus ? What i");
+	}
 	return elements;
 }
