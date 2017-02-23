@@ -1,9 +1,85 @@
 <testsuites>
-	<testsuite name="AllTests" tests="5">
+	<testsuite name="AllTests" tests="21">
 		<testcase classname="AllTests" name="AdditionTests::testSingleAddition1"/>
 		<testcase classname="AllTests" name="AdditionTests::testSingleAddition2"/>
 		<testcase classname="AllTests" name="AdditionTests::testSingleAdditionWithNegativeNumbers"/>
 		<testcase classname="AllTests" name="AdditionTests::testSingleAdditionOfLargeNumbers"/>
 		<testcase classname="AllTests" name="AdditionTests::testMultipleAdditions"/>
+		<testcase classname="AllTests" name="SubtractionTests::testSingleSubtraction">
+			<failure message="../test/WordProblemSolverTests.cpp:35 testSingleSubtraction: 16 == solver.solve(&quot;What is 4 minus -12?&quot;) expected:	16	but was:	-8	">
+testSingleSubtraction: 16 == solver.solve(&quot;What is 4 minus -12?&quot;) expected:	16	but was:	-8	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="SubtractionTests::testSingleSubtraction">
+			<failure message="../test/WordProblemSolverTests.cpp:35 testSingleSubtraction: 16 == solver.solve(&quot;What is 4 minus -12?&quot;) expected:	16	but was:	-8	">
+testSingleSubtraction: 16 == solver.solve(&quot;What is 4 minus -12?&quot;) expected:	16	but was:	-8	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="SubtractionTests::testSingleSubtractionWithNegativeNumbers"/>
+		<testcase classname="AllTests" name="SubtractionTests::testSingleSubtractionOfLargeNumbers">
+			<failure message="../test/WordProblemSolverTests.cpp:43 testSingleSubtractionOfLargeNumbers: -45555 == solver.solve(&quot;What is 123 minus 45678?&quot;) expected:	-45555	but was:	45801	">
+testSingleSubtractionOfLargeNumbers: -45555 == solver.solve(&quot;What is 123 minus 45678?&quot;) expected:	-45555	but was:	45801	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="SubtractionTests::testMultipleSubtractions">
+			<failure message="../test/WordProblemSolverTests.cpp:47 testMultipleSubtractions: -1 == solver.solve(&quot;What is 1 minus 1 minus 1?&quot;) expected:	-1	but was:	3	">
+testMultipleSubtractions: -1 == solver.solve(&quot;What is 1 minus 1 minus 1?&quot;) expected:	-1	but was:	3	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="MultiplicationTests::testSingleMultiplication">
+			<failure message="../test/WordProblemSolverTests.cpp:51 testSingleMultiplication: -75 == solver.solve(&quot;What is -3 multiplied by 25?&quot;) expected:	-75	but was:	22	">
+testSingleMultiplication: -75 == solver.solve(&quot;What is -3 multiplied by 25?&quot;) expected:	-75	but was:	22	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="MultiplicationTests::testSingleMultiplicationWithNegativeNumbers">
+			<failure message="../test/WordProblemSolverTests.cpp:55 testSingleMultiplicationWithNegativeNumbers: 75 == solver.solve(&quot;What is -3 multiplied by -25?&quot;) expected:	75	but was:	-28	">
+testSingleMultiplicationWithNegativeNumbers: 75 == solver.solve(&quot;What is -3 multiplied by -25?&quot;) expected:	75	but was:	-28	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="MultiplicationTests::testSingleMultiplicationOfLargeNumbers">
+			<failure message="../test/WordProblemSolverTests.cpp:59 testSingleMultiplicationOfLargeNumbers: 5618394 == solver.solve(&quot;What is 123 multiplied by 45678?&quot;) expected:	5618394	but was:	45801	">
+testSingleMultiplicationOfLargeNumbers: 5618394 == solver.solve(&quot;What is 123 multiplied by 45678?&quot;) expected:	5618394	but was:	45801	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="MultiplicationTests::testMultipleMultiplications">
+			<failure message="../test/WordProblemSolverTests.cpp:63 testMultipleMultiplications: -12 == solver.solve(&quot;What is 2 multiplied by -2 multiplied by 3?&quot;) expected:	-12	but was:	3	">
+testMultipleMultiplications: -12 == solver.solve(&quot;What is 2 multiplied by -2 multiplied by 3?&quot;) expected:	-12	but was:	3	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="DivisionTests::testSingleDivision">
+			<failure message="../test/WordProblemSolverTests.cpp:67 testSingleDivision: -11 == solver.solve(&quot;What is 33 divided by -3?&quot;) expected:	-11	but was:	30	">
+testSingleDivision: -11 == solver.solve(&quot;What is 33 divided by -3?&quot;) expected:	-11	but was:	30	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="DivisionTests::testSingleDivisionWithNegativeNumbers">
+			<failure message="../test/WordProblemSolverTests.cpp:71 testSingleDivisionWithNegativeNumbers: 11 == solver.solve(&quot;What is -33 divided by -3?&quot;) expected:	11	but was:	-36	">
+testSingleDivisionWithNegativeNumbers: 11 == solver.solve(&quot;What is -33 divided by -3?&quot;) expected:	11	but was:	-36	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="DivisionTests::testSingleDivisionOfLargeNumbers">
+			<failure message="../test/WordProblemSolverTests.cpp:75 testSingleDivisionOfLargeNumbers: 4526 == solver.solve(&quot;What is 67890 divided by 15?&quot;) expected:	4526	but was:	67905	">
+testSingleDivisionOfLargeNumbers: 4526 == solver.solve(&quot;What is 67890 divided by 15?&quot;) expected:	4526	but was:	67905	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="DivisionTests::testMultipleDivisions">
+			<failure message="../test/WordProblemSolverTests.cpp:79 testMultipleDivisions: 2 == solver.solve(&quot;What is -12 divided by 2 divided by -3?&quot;) expected:	2	but was:	-13	">
+testMultipleDivisions: 2 == solver.solve(&quot;What is -12 divided by 2 divided by -3?&quot;) expected:	2	but was:	-13	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="CrossTests::testAdditionThenSubtraction">
+			<failure message="../test/WordProblemSolverTests.cpp:83 testAdditionThenSubtraction: 8 == solver.solve(&quot;What is 1 plus 5 minus -2?&quot;) expected:	8	but was:	4	">
+testAdditionThenSubtraction: 8 == solver.solve(&quot;What is 1 plus 5 minus -2?&quot;) expected:	8	but was:	4	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="CrossTests::testSubtractionThenAddition">
+			<failure message="../test/WordProblemSolverTests.cpp:87 testSubtractionThenAddition: 14 == solver.solve(&quot;What is 17 minus 6 plus 3?&quot;) expected:	14	but was:	26	">
+testSubtractionThenAddition: 14 == solver.solve(&quot;What is 17 minus 6 plus 3?&quot;) expected:	14	but was:	26	
+			</failure>
+		</testcase>
+		<testcase classname="AllTests" name="CrossTests::testAdditionThenMultiplication">
+			<failure message="../test/WordProblemSolverTests.cpp:91 testAdditionThenMultiplication: -8 == solver.solve(&quot;What is -3 plus 7 multiplied by -2?&quot;) expected:	-8	but was:	2	">
+testAdditionThenMultiplication: -8 == solver.solve(&quot;What is -3 plus 7 multiplied by -2?&quot;) expected:	-8	but was:	2	
+			</failure>
+		</testcase>
 	</testsuite>
 </testsuites>

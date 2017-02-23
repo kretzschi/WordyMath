@@ -19,6 +19,26 @@ void runAllTests(int argc, char const *argv[]){
 	s.push_back(CUTE_SMEMFUN(AdditionTests, testSingleAdditionOfLargeNumbers));
 	s.push_back(CUTE_SMEMFUN(AdditionTests, testMultipleAdditions));
 
+	s.push_back(CUTE_SMEMFUN(SubtractionTests, testSingleSubtraction));
+	s.push_back(CUTE_SMEMFUN(SubtractionTests, testSingleSubtraction));
+	s.push_back(CUTE_SMEMFUN(SubtractionTests, testSingleSubtractionWithNegativeNumbers));
+	s.push_back(CUTE_SMEMFUN(SubtractionTests, testSingleSubtractionOfLargeNumbers));
+	s.push_back(CUTE_SMEMFUN(SubtractionTests, testMultipleSubtractions));
+
+	s.push_back(CUTE_SMEMFUN(MultiplicationTests, testSingleMultiplication));
+	s.push_back(CUTE_SMEMFUN(MultiplicationTests, testSingleMultiplicationWithNegativeNumbers));
+	s.push_back(CUTE_SMEMFUN(MultiplicationTests, testSingleMultiplicationOfLargeNumbers));
+	s.push_back(CUTE_SMEMFUN(MultiplicationTests, testMultipleMultiplications));
+
+	s.push_back(CUTE_SMEMFUN(DivisionTests, testSingleDivision));
+	s.push_back(CUTE_SMEMFUN(DivisionTests, testSingleDivisionWithNegativeNumbers));
+	s.push_back(CUTE_SMEMFUN(DivisionTests, testSingleDivisionOfLargeNumbers));
+	s.push_back(CUTE_SMEMFUN(DivisionTests, testMultipleDivisions));
+
+	s.push_back(CUTE_SMEMFUN(CrossTests, testAdditionThenSubtraction));
+	s.push_back(CUTE_SMEMFUN(CrossTests, testSubtractionThenAddition));
+	s.push_back(CUTE_SMEMFUN(CrossTests, testAdditionThenMultiplication));
+
 	// add more test cases here
 
 	cute::xml_file_opener xmlfile(argc,argv);
